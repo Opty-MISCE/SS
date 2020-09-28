@@ -1,4 +1,4 @@
-# Second Laboratory Scripts
+# Second Laboratory (XSS) Scripts
 
 ### Get Own Cookies On Search (Task 1.2):
 
