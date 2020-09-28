@@ -1,3 +1,0 @@
-<svg onload="
-    document.write(document.cookie);
-"></svg>
