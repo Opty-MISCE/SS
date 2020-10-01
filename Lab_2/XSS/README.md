@@ -88,5 +88,3 @@ HTTP.send();
 ```
 
 - Fill `<IP>` & `<PORT>` (Attacker Domain)
-
----
