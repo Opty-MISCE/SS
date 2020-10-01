@@ -1,6 +1,6 @@
 # Second Laboratory (XSS) Scripts
 
-### Get Own Cookies On Search (Task 1.2):
+### Get Own Cookies On Search:
 
 ```html
 <script>
@@ -12,7 +12,7 @@
 
 ---
 
-### Steal Admin's Cookies On Bug / Feature Report (Task 1.4):
+### Steal Admin's Cookies On Bug / Feature Report:
 
 ```html
 <script>
@@ -30,7 +30,7 @@
 
 ---
 
-### Steal Admin's Cookies On Bug / Feature Report Bypassing Simple WAF (Task 2.1):
+### Steal Admin's Cookies On Bug / Feature Report Bypassing Simple WAF:
 
 ```html
 <svg onload="
@@ -48,7 +48,7 @@
 
 ---
 
-### Steal Admin's Cookies On BlogPosts Review (Task 3.2):
+### Steal Admin's Cookies On BlogPosts Review:
 
 ```html
 </textarea>
@@ -66,7 +66,7 @@
 
 ---
 
-### Steal Admin's Cookies On BlogPosts Review Using Remote Scripts (Task 3.3):
+### Steal Admin's Cookies On BlogPosts Review Using Remote Scripts:
 
 ```html
 </textarea>
