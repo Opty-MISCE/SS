@@ -13,5 +13,5 @@ session.cookies.set('remaining_tries', '500')
 while crr != trg:
     crr = findall(r"\d+", session.get(MORE).text)[-1]
 
-print(session.get(FINISH).content.decode("UTF-8"))
+print(session.get(FINISH).text)
 session.close()
