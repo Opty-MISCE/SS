@@ -1,6 +1,6 @@
-#include "../general.h"
 #include <stdio.h>
 #include <stdlib.h>
+void init();
 
 char storage[256] = {0};
 
@@ -17,4 +17,12 @@ int main() {
     init();
     welcome_user();
     return 0;
+}
+
+/* Aux Functions */
+#include <stdio.h>
+
+void init() {
+    setvbuf(stdin, NULL, _IONBF, 0);
+    setvbuf(stdout, NULL, _IONBF, 0);
 }

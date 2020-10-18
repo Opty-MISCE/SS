@@ -1,11 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <unistd.h>
-
-void init() {
-    setvbuf(stdin, NULL, _IONBF, 0);
-    setvbuf(stdout, NULL, _IONBF, 0);
-}
+void init();
 
 void challenge() {
     char leaky[16];
@@ -21,4 +17,12 @@ int main() {
     init();
     challenge();
     return 0;
+}
+
+/* Aux Functions */
+#include <stdio.h>
+
+void init() {
+    setvbuf(stdin, NULL, _IONBF, 0);
+    setvbuf(stdout, NULL, _IONBF, 0);
 }

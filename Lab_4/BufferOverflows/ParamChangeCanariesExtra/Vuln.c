@@ -5,16 +5,11 @@
 #include <sys/stat.h>
 #include <sys/types.h>
 #include <unistd.h>
-
 #define BUF_SIZE 64
 #define PASS_LEN 32
+void init();
 
 char pass[PASS_LEN];
-
-void init() {
-    setvbuf(stdin, NULL, _IONBF, 0);
-    setvbuf(stdout, NULL, _IONBF, 0);
-}
 
 void get_flag() {
     system("/bin/sh");
@@ -45,4 +40,12 @@ int main() {
     read(0, user_pass, BUF_SIZE);
 
     canary_down(memcmp(pass, user_pass, PASS_LEN));
+}
+
+/* Aux Functions */
+#include <stdio.h>
+
+void init() {
+    setvbuf(stdin, NULL, _IONBF, 0);
+    setvbuf(stdout, NULL, _IONBF, 0);
 }

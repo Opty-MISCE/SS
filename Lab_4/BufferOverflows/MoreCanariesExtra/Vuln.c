@@ -1,14 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-
 #define BUF_SIZE 64
 #define CMD_MAX_SIZE 128
-
-void init() {
-    setvbuf(stdin, NULL, _IONBF, 0);
-    setvbuf(stdout, NULL, _IONBF, 0);
-}
+void init();
 
 void get_flag() {
     system("/bin/sh");
@@ -53,4 +48,12 @@ void canary_down() {
 int main() {
     init();
     canary_down();
+}
+
+/* Aux Functions */
+#include <stdio.h>
+
+void init() {
+    setvbuf(stdin, NULL, _IONBF, 0);
+    setvbuf(stdout, NULL, _IONBF, 0);
 }

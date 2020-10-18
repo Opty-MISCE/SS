@@ -1,4 +1,3 @@
-#include "../general.h"
 #include <errno.h>
 #include <fcntl.h>
 #include <stdio.h>
@@ -8,8 +7,9 @@
 #include <sys/types.h>
 #include <time.h>
 #include <unistd.h>
-
 #define DATADIR "/home/ctf/data"// Dir where the data is stored
+void init();
+char *get_flag();
 
 // Custom user struct to store information about users
 struct user {
@@ -117,7 +117,7 @@ int main() {
         printf("\nThanks for playing! Not enough to get the big prize though. Bye.\n");
     else {
         printf("\nYou beat the house. Here is your flag.\n");
-        printf("Flag, %s\n", getflag());
+        printf("Flag, %s\n", get_flag());
     }
 }
 
@@ -475,4 +475,30 @@ int find_the_ace() {
         }
     }
     return 0;
+}
+
+/* Aux Functions */
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <fcntl.h>
+
+void init() {
+    setvbuf(stdin, NULL, _IONBF, 0);
+    setvbuf(stdout, NULL, _IONBF, 0);
+}
+
+char *get_flag() {
+    char *secret = calloc(50, 1);
+
+    int fd = open("/home/ctf/flag", O_RDONLY);
+    if (fd == -1) {
+        char *default_flag = "STT{The_Correct_Flag_is_On_The_Server}";
+        memcpy(secret, default_flag, strlen(default_flag));
+    } else {
+        read(fd, secret, 49);
+        close(fd);
+    }
+
+    return secret;
 }
