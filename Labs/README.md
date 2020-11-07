@@ -1,4 +1,7 @@
-# Software Security - Laboratories & Projects 2020/2021
+# Software Security - Laboratories 2020/2021
+
+### Statements
+- https://github.com/pedromigueladao/SSof/wiki
 
 | Name | University | Email |
 | ---- | ---- | ---- |
