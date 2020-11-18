@@ -1,7 +1,7 @@
 # Software Security - Laboratories 2020/2021
 
 ### Statements
-- https://github.com/pedromigueladao/SSof/wiki
+- Available [(Here)](https://github.com/Opty-Forks/SSof/wiki)
 
 | Name | University | Email |
 | ---- | ---- | ---- |
